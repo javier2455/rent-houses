@@ -4,14 +4,15 @@ import App from './App.jsx'
 import './index.css'
 
 import HouseContextProvider from './context/HouseContext.jsx'
-import { HashRouter } from 'react-router-dom'
+// import { HashRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <HouseContextProvider>
-    <HashRouter>
+    <BrowserRouter>
       <React.StrictMode>
         <App />
       </React.StrictMode>
-    </HashRouter>
+    </BrowserRouter>
   </HouseContextProvider>
 )

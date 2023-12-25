@@ -1,8 +1,12 @@
+import { useContext } from 'react'
 import Rooms from './Rooms'
+import { HouseContext } from '../../context/HouseContext'
+import { getPriceByCoin } from '../../utils/functions'
 
 export default function House({ data }) {
   const { image, type, country, address, bedrooms, bathrooms, surface, price } =
     data
+    const { coinType } = useContext(HouseContext)
   return (
     <div className='bg-white shadow-1 p-5 rounded-lg rounded-tl-[90px] w-full max-w-[352px] mx-auto cursor-pointer hover:shadow-2xl border transition'>
       <img src={image} alt='house details' className='mb-8' />
@@ -20,7 +24,7 @@ export default function House({ data }) {
         <Rooms typeRoom={'surface'} count={surface} />
       </div>
       <div className='text-lg font-semibold text-violet-700 mb-4'>
-        $ {price}
+        $ {getPriceByCoin(price, coinType)}
       </div>
     </div>
   )

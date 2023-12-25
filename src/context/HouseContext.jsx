@@ -13,6 +13,7 @@ const HouseContextProvider = ({ children }) => {
   const [properties, setProperties] = useState([])
   const [price, setPrice] = useState('Price (any)')
   const [loading, setLoading] = useState(false)
+  const [coinType, setCoinType] = useState('USD')
 
   useEffect(() => {
     const allCountries = houses.map((house) => house.country)
@@ -49,7 +50,9 @@ const HouseContextProvider = ({ children }) => {
     setPrice,
     houses,
     loading,
-    handleSearch
+    handleSearch,
+    setCoinType,
+    coinType
   }
 
   return <HouseContext.Provider value={data}>{children}</HouseContext.Provider>

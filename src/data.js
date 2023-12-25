@@ -69,7 +69,11 @@ export const housesData = [
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2016',
-    price: '110000',
+    price: [
+      { coin: 'USD', value: '11000' },
+      { coin: 'EUR', value: '10000' },
+      { coin: 'CUP', value: '2975000' }
+    ],
     agent: {
       image: Agent1,
       name: 'Patricia Tullert',
@@ -91,7 +95,11 @@ export const housesData = [
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2016',
-    price: '140000',
+    price: [
+      { coin: 'USD', value: '14000' },
+      { coin: 'EUR', value: '13000' },
+      { coin: 'CUP', value: '3375000' }
+    ],
     agent: {
       image: Agent2,
       name: 'Daryl Hawker',
@@ -113,7 +121,11 @@ export const housesData = [
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2016',
-    price: '170000',
+    price: [
+      { coin: 'USD', value: '17000' },
+      { coin: 'EUR', value: '16000' },
+      { coin: 'CUP', value: '4425000' }
+    ],
     agent: {
       image: Agent3,
       name: 'Amado Smith',
@@ -135,7 +147,11 @@ export const housesData = [
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2016',
-    price: '200000',
+    price: [
+      { coin: 'USD', value: '20000' },
+      { coin: 'EUR', value: '19000' },
+      { coin: 'CUP', value: '5605000' }
+    ],
     agent: {
       image: Agent4,
       name: 'Kaitlyn Gonzalez',
@@ -157,7 +173,11 @@ export const housesData = [
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2015',
-    price: '210000',
+    price: [
+      { coin: 'USD', value: '21000' },
+      { coin: 'EUR', value: '20000' },
+      { coin: 'CUP', value: '7695000' }
+    ],
     agent: {
       image: Agent5,
       name: 'Grover Robinson',
@@ -179,7 +199,11 @@ export const housesData = [
     bathrooms: '3',
     surface: '6200 sq ft',
     year: '2014',
-    price: '220000',
+    price: [
+      { coin: 'USD', value: '22000' },
+      { coin: 'EUR', value: '21000' },
+      { coin: 'CUP', value: '8125000' }
+    ],
     agent: {
       image: Agent6,
       name: 'Karen Sorensen',
@@ -201,7 +225,11 @@ export const housesData = [
     bathrooms: '1',
     surface: '1200 sq ft',
     year: '2012',
-    price: '20000',
+    price: [
+      { coin: 'USD', value: '20000' },
+      { coin: 'EUR', value: '19000' },
+      { coin: 'CUP', value: '8065000' }
+    ],
     agent: {
       image: Agent7,
       name: 'Jawhar Shamil Naser',
@@ -223,7 +251,11 @@ export const housesData = [
     bathrooms: '1',
     surface: '1000 sq ft',
     year: '2011',
-    price: '30000',
+    price: [
+      { coin: 'USD', value: '30000' },
+      { coin: 'EUR', value: '29000' },
+      { coin: 'CUP', value: '12555000' }
+    ],
     agent: {
       image: Agent8,
       name: 'Juana Douglass',
@@ -245,7 +277,11 @@ export const housesData = [
     bathrooms: '1',
     surface: '1100 sq ft',
     year: '2011',
-    price: '40000',
+    price: [
+      { coin: 'USD', value: '40000' },
+      { coin: 'EUR', value: '39000' },
+      { coin: 'CUP', value: '26355000' }
+    ],
     agent: {
       image: Agent9,
       name: 'Jerry Schenck',
@@ -267,7 +303,11 @@ export const housesData = [
     bathrooms: '3',
     surface: '3200 sq ft',
     year: '2015',
-    price: '117000',
+    price: [
+      { coin: 'USD', value: '117000' },
+      { coin: 'EUR', value: '116000' },
+      { coin: 'CUP', value: '963505000' }
+    ],
     agent: {
       image: Agent10,
       name: 'Vera Levesque',
@@ -289,7 +329,11 @@ export const housesData = [
     bathrooms: '2',
     surface: '2200 sq ft',
     year: '2019',
-    price: '145000',
+    price: [
+      { coin: 'USD', value: '145000' },
+      { coin: 'EUR', value: '144000' },
+      { coin: 'CUP', value: '822035000' }
+    ],
     agent: {
       image: Agent11,
       name: 'Sofia Gomes',
@@ -311,7 +355,11 @@ export const housesData = [
     bathrooms: '4',
     surface: '4600 sq ft',
     year: '2015',
-    price: '139000',
+    price: [
+      { coin: 'USD', value: '139000' },
+      { coin: 'EUR', value: '138000' },
+      { coin: 'CUP', value: '882205000' }
+    ],
     agent: {
       image: Agent12,
       name: 'Raymond Hood',
@@ -333,7 +381,11 @@ export const housesData = [
     bathrooms: '2',
     surface: '5200 sq ft',
     year: '2014',
-    price: '180000',
+    price: [
+      { coin: 'USD', value: '180000' },
+      { coin: 'EUR', value: '170000' },
+      { coin: 'CUP', value: '755265000' }
+    ],
     agent: {
       image: Agent1,
       name: 'Patricia Tullert',
@@ -355,7 +407,11 @@ export const housesData = [
     bathrooms: '2',
     surface: '3200 sq ft',
     year: '2011',
-    price: '213000',
+    price: [
+      { coin: 'USD', value: '213000' },
+      { coin: 'EUR', value: '212000' },
+      { coin: 'CUP', value: '99995000' }
+    ],
     agent: {
       image: Agent2,
       name: 'Daryl Hawker',
@@ -377,7 +433,11 @@ export const housesData = [
     bathrooms: '3',
     surface: '5200 sq ft',
     year: '2013',
-    price: '221000',
+    price: [
+      { coin: 'USD', value: '221000' },
+      { coin: 'EUR', value: '220000' },
+      { coin: 'CUP', value: '1199995000' }
+    ],
     agent: {
       image: Agent3,
       name: 'Amado Smith',
@@ -399,7 +459,11 @@ export const housesData = [
     bathrooms: '1',
     surface: '1300 sq ft',
     year: '2011',
-    price: '21000',
+    price: [
+      { coin: 'USD', value: '21000' },
+      { coin: 'EUR', value: '20000' },
+      { coin: 'CUP', value: '5670000' }
+    ],
     agent: {
       image: Agent4,
       name: 'Kaitlyn Gonzalez',
@@ -421,7 +485,11 @@ export const housesData = [
     bathrooms: '1',
     surface: '1000 sq ft',
     year: '2012',
-    price: '32000',
+    price: [
+      { coin: 'USD', value: '32000' },
+      { coin: 'EUR', value: '31000' },
+      { coin: 'CUP', value: '8640000' }
+    ],
     agent: {
       image: Agent5,
       name: 'Grover Robinson',
@@ -443,7 +511,11 @@ export const housesData = [
     bathrooms: '1',
     surface: '1200 sq ft',
     year: '2010',
-    price: '38000',
+    price: [
+      { coin: 'USD', value: '38000' },
+      { coin: 'EUR', value: '37000' },
+      { coin: 'CUP', value: '10260000' }
+    ],
     agent: {
       image: Agent6,
       name: 'Karen Sorensen',

@@ -9,4 +9,9 @@ Currently, two official plugins are available:
 
 
 ## Tareas pendientes
-* Mejorar el código de filtrado en el componente search y HouseContext
+* Mejorar el código de filtrado en el componente search y HouseContext. (25/12/2023)
+* Arreglar navegación. (25/12/2023)
+
+## Tareas terminadas
+* Darle un max-width a la descripción de las casas en vista móvil. (25/12/2023)
+* Agregar el tipo de moneda para variar el precio de las casas. (25/12/2023)

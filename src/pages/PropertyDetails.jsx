@@ -11,9 +11,13 @@ import {
 } from 'react-icons/hi2'
 import { RiMapPinLine } from 'react-icons/ri'
 import ScrollToTopController from '../components/Scroll/ScrollToTopController'
+import { getPriceByCoin } from '../utils/functions'
+import { useContext } from 'react'
+import { HouseContext } from '../context/HouseContext'
 
 export default function PropertyDetails() {
   let { id } = useParams()
+  const { coinType } = useContext(HouseContext)
   const house = housesData.find((house) => house.id === parseInt(id))
   return (
     <section>
@@ -25,7 +29,7 @@ export default function PropertyDetails() {
             <div className='mb-8'>
               <img src={house.imageLg} alt={house.id} />
             </div>
-            <div className='flex gap-6 text-violet-700 mb-6'>
+            <div className='flex gap-6 text-violet-700 mb-6 pl-4 lg:pl-0'>
               <div className='flex gap-x-2 items-center'>
                 <BiBed className='text-2xl' />
                 <div>{house.bedrooms}</div>
@@ -39,7 +43,7 @@ export default function PropertyDetails() {
                 <div>{house.surface}</div>
               </div>
             </div>
-            <div className='font-semibold text-[18px]'>{house.description}</div>
+            <div className='font-semibold text-[18px] max-w-[90%] pl-4 lg:pl-0 lg:max-w-full'>{house.description}</div>
           </div>
           <div className='flex-1 bg-white w-full mb-8 border border-gray-300 rounded-lg px-6 py-8'>
             <div className='flex items-center gap-x-4 mb-8'>
@@ -87,7 +91,7 @@ export default function PropertyDetails() {
               <div className='flex items-center justify-start'>
                 <HiOutlineCurrencyDollar className='text-2xl text-violet-700 mr-3' />
                 <div className='text-3xl text-violet-700 font-semibold'>
-                  {house.price}
+                  {getPriceByCoin(house.price, coinType)}
                 </div>
               </div>
             </div>

@@ -3,7 +3,7 @@ import { HiOutlineWallet } from 'react-icons/hi2'
 import { HouseContext } from '../context/HouseContext'
 
 export default function PriceDropdown() {
-  const { setPrice } = useContext(HouseContext)
+  const { setPrice, coinType } = useContext(HouseContext)
   const prices = [
     {
       value: '10000 - 30000'
@@ -21,7 +21,27 @@ export default function PriceDropdown() {
       value: '160000 - 190000'
     },
     {
-      value: '190000 - 220000'
+      value: '190000 - 230000'
+    }
+  ]
+  const pricesInCUP = [
+    {
+      value: '2900000 - 4000000'
+    },
+    {
+      value: '4100000 - 6000000'
+    },
+    {
+      value: '6100000 - 8000000'
+    },
+    {
+      value: '8100000 - 10000000'
+    },
+    {
+      value: '10010000 - 20000000'
+    },
+    {
+      value: '20000000 - 60000000'
     }
   ]
   return (
@@ -31,13 +51,18 @@ export default function PriceDropdown() {
       </div>
       <div className='flex items-center rounded-lg h-full w-full'>
         <select
-          className='select w-full focus:border-none focus:outline-none'
+          className='select w-full h-full focus:border-none focus:outline-none rounded-lg mr-1'
           onChange={(e) => setPrice(e.target.value)}
         >
           <option value={'Price (any)'} className='text-[14px]'>
             Price (any)
           </option>
-          {prices.map((p, index) => (
+          {coinType === 'CUP' && pricesInCUP.map((p, index) => (
+            <option key={index} value={p.value} className='text-[14px]'>
+              {p.value}
+            </option>
+          ))}
+          {coinType !== 'CUP' && prices.map((p, index) => (
             <option key={index} value={p.value} className='text-[14px]'>
               {p.value}
             </option>

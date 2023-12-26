@@ -11,7 +11,7 @@ export default function PropertyDropdown() {
       </div>
       <div className='flex items-center rounded-lg h-full w-full'>
       <select
-          className='select w-full focus:border-none focus:outline-none'
+          className='select w-full h-full focus:border-none focus:outline-none rounded-lg mr-1'
           onChange={(e) => setProperty(e.target.value)}
         >
           {/* <option selected className='text-[14px]'>

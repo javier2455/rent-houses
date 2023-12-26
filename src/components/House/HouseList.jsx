@@ -9,7 +9,7 @@ export default function HouseList() {
   const { houses, loading } = useContext(HouseContext)
 
   if(loading){
-    return <ImSpinner10 className='mx-auto animate-spin text-violet-700 text-4xl mt-[200px]'/>
+    return <ImSpinner10 className='mx-auto animate-spin text-violet-700 text-4xl my-[200px]'/>
   }
 
   if(houses.length < 1){

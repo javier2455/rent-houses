@@ -31,7 +31,7 @@ const HouseContextProvider = ({ children }) => {
     setLoading(true)
 
     const filterHouses = housesData.filter((house) => {
-      return validateSearch(house, price, country, property)
+      return validateSearch(house, price, country, property, coinType)
     })
     setTimeout(() => {
       return filterHouses.length < 1 ? setHouses([]) : setHouses(filterHouses),

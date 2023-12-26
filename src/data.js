@@ -72,7 +72,7 @@ export const housesData = [
     price: [
       { coin: 'USD', value: '11000' },
       { coin: 'EUR', value: '10000' },
-      { coin: 'CUP', value: '2975000' }
+      { coin: 'CUP', value: '2970000' }
     ],
     agent: {
       image: Agent1,
@@ -98,7 +98,7 @@ export const housesData = [
     price: [
       { coin: 'USD', value: '14000' },
       { coin: 'EUR', value: '13000' },
-      { coin: 'CUP', value: '3375000' }
+      { coin: 'CUP', value: '3780000' }
     ],
     agent: {
       image: Agent2,
@@ -124,7 +124,7 @@ export const housesData = [
     price: [
       { coin: 'USD', value: '17000' },
       { coin: 'EUR', value: '16000' },
-      { coin: 'CUP', value: '4425000' }
+      { coin: 'CUP', value: '4590000' }
     ],
     agent: {
       image: Agent3,
@@ -150,7 +150,7 @@ export const housesData = [
     price: [
       { coin: 'USD', value: '20000' },
       { coin: 'EUR', value: '19000' },
-      { coin: 'CUP', value: '5605000' }
+      { coin: 'CUP', value: '5400000' }
     ],
     agent: {
       image: Agent4,
@@ -176,7 +176,7 @@ export const housesData = [
     price: [
       { coin: 'USD', value: '21000' },
       { coin: 'EUR', value: '20000' },
-      { coin: 'CUP', value: '7695000' }
+      { coin: 'CUP', value: '5670000' }
     ],
     agent: {
       image: Agent5,
@@ -202,7 +202,7 @@ export const housesData = [
     price: [
       { coin: 'USD', value: '22000' },
       { coin: 'EUR', value: '21000' },
-      { coin: 'CUP', value: '8125000' }
+      { coin: 'CUP', value: '5940000' }
     ],
     agent: {
       image: Agent6,
@@ -228,7 +228,7 @@ export const housesData = [
     price: [
       { coin: 'USD', value: '20000' },
       { coin: 'EUR', value: '19000' },
-      { coin: 'CUP', value: '8065000' }
+      { coin: 'CUP', value: '5400000' }
     ],
     agent: {
       image: Agent7,
@@ -254,7 +254,7 @@ export const housesData = [
     price: [
       { coin: 'USD', value: '30000' },
       { coin: 'EUR', value: '29000' },
-      { coin: 'CUP', value: '12555000' }
+      { coin: 'CUP', value: '8100000' }
     ],
     agent: {
       image: Agent8,
@@ -280,7 +280,7 @@ export const housesData = [
     price: [
       { coin: 'USD', value: '40000' },
       { coin: 'EUR', value: '39000' },
-      { coin: 'CUP', value: '26355000' }
+      { coin: 'CUP', value: '10800000' }
     ],
     agent: {
       image: Agent9,
@@ -306,7 +306,7 @@ export const housesData = [
     price: [
       { coin: 'USD', value: '117000' },
       { coin: 'EUR', value: '116000' },
-      { coin: 'CUP', value: '963505000' }
+      { coin: 'CUP', value: '31590000' }
     ],
     agent: {
       image: Agent10,
@@ -332,7 +332,7 @@ export const housesData = [
     price: [
       { coin: 'USD', value: '145000' },
       { coin: 'EUR', value: '144000' },
-      { coin: 'CUP', value: '822035000' }
+      { coin: 'CUP', value: '39150000' }
     ],
     agent: {
       image: Agent11,
@@ -358,7 +358,7 @@ export const housesData = [
     price: [
       { coin: 'USD', value: '139000' },
       { coin: 'EUR', value: '138000' },
-      { coin: 'CUP', value: '882205000' }
+      { coin: 'CUP', value: '37530000' }
     ],
     agent: {
       image: Agent12,
@@ -384,7 +384,7 @@ export const housesData = [
     price: [
       { coin: 'USD', value: '180000' },
       { coin: 'EUR', value: '170000' },
-      { coin: 'CUP', value: '755265000' }
+      { coin: 'CUP', value: '48600000' }
     ],
     agent: {
       image: Agent1,
@@ -410,7 +410,7 @@ export const housesData = [
     price: [
       { coin: 'USD', value: '213000' },
       { coin: 'EUR', value: '212000' },
-      { coin: 'CUP', value: '99995000' }
+      { coin: 'CUP', value: '57510000' }
     ],
     agent: {
       image: Agent2,
@@ -436,7 +436,7 @@ export const housesData = [
     price: [
       { coin: 'USD', value: '221000' },
       { coin: 'EUR', value: '220000' },
-      { coin: 'CUP', value: '1199995000' }
+      { coin: 'CUP', value: '59670000' }
     ],
     agent: {
       image: Agent3,

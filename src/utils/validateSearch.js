@@ -1,10 +1,10 @@
-import { isDefault } from './functions'
+import { getPriceByCoin, isDefault } from './functions'
 
-export function validateSearch(house, price, country, property) {
+export function validateSearch(house, price, country, property, coin) {
   const minPrice = parseInt(price.split(' ')[0])
   const maxPrice = parseInt(price.split(' ')[2])
 
-  const housePrice = parseInt(house.price)
+  const housePrice = parseInt(getPriceByCoin(house.price, coin))
   // if all values are selected
   if (
     house.country === country &&

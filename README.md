@@ -10,7 +10,8 @@ Currently, two official plugins are available:
 
 ## Tareas pendientes (20/12/2023 - Development)
 * Mejorar el código de filtrado en el componente search y HouseContext. 
-* Incluir las opciones para el Sidebar.
+* Incluir las opciones para el Sidebar. (me quede aqui)
+* Modo oscuro.
 * Hacer formulario para el Login.
 * Hacer formulario para el Register.
 * Hacer la 'data' de usuarios.
@@ -19,7 +20,6 @@ Currently, two official plugins are available:
 * Hacer el formulario de pago para renta.
 * Hacer algunas Notificaciones.
 * Hacer las validaciones cuando termina el proceso de rentar o cuando ocurre algn error.
-* Modo oscuro.
 * Internacionalización.
 
 ## Tareas terminadas

@@ -5,6 +5,7 @@ import { DropdownComponent } from '../Dropdown/DropDown'
 import { SidebarComponent } from '../Sidebar/SidebarNavigation'
 import { useState } from 'react'
 import { FaBars } from 'react-icons/fa6'
+import DropDownOptions from '../Dropdown/DropDownOptions'
 
 export const NavigationBar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
@@ -24,7 +25,7 @@ export const NavigationBar = () => {
             className='lg:flex hidden items-center justify-between gap-4'
           >
             {/* Aqui puede ir contenido que se oculta cuando cambian las dimensiones a mobile */}
-            <div
+            {/* <div
               onClick={() => setToggleMenu(!toggleMenu)}
               className='flex justify-center items-center cursor-pointer border hover:border-violet-700 px-4 py-2 rounded-lg text-violet-700 transition'
             >
@@ -35,10 +36,11 @@ export const NavigationBar = () => {
               className='flex justify-center items-center cursor-pointer px-4 py-2 rounded-lg bg-violet-700 text-white hover:bg-violet-800 transition'
             >
               <p>Sign Up</p>
-            </div>
+            </div> */}
           </Navbar.Container>
           <Navbar.Container className='flex gap-3'>
             <DropdownComponent />
+            <DropDownOptions />
             <div
               onClick={() => setToggleMenu(!toggleMenu)}
               className='lg:hidden flex justify-center items-center cursor-pointer border border-violet-700 px-4 py-2 rounded-lg hover:bg-violet-700 hover:text-white text-violet-700 transition'

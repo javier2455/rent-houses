@@ -5,8 +5,8 @@ import {
   // FaRegMoon,
   FaUserPlus,
   FaRightToBracket,
-  FaRightFromBracket,
-  FaGear
+  // FaRightFromBracket,
+  // FaGear
 } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 
@@ -36,13 +36,13 @@ export const SidebarComponent = ({ toggleMenu, setToggleMenu }) => {
         >
           Light / Dark Mode
         </Sidebar.Item>
-        <Sidebar.Item
+        {/* <Sidebar.Item
           icon={<FaGear className='text-2xl text-violet-700' />}
           className='text-violet-700 hover:bg-white hover:border-l-[3px] hover:border-l-violet-700
           transition'
         >
           Options
-        </Sidebar.Item>
+        </Sidebar.Item> */}
         <Link to='/sign-in'>
           <Sidebar.Item
             icon={<FaRightToBracket className='text-2xl text-violet-700' />}
@@ -61,13 +61,13 @@ export const SidebarComponent = ({ toggleMenu, setToggleMenu }) => {
             Sign Up
           </Sidebar.Item>
         </Link>
-        <Sidebar.Item
+        {/* <Sidebar.Item
           icon={<FaRightFromBracket className='text-2xl text-violet-700' />}
           className='text-violet-700 hover:bg-white hover:border-l-[3px] hover:border-l-violet-700
           transition'
         >
           Sign Out
-        </Sidebar.Item>
+        </Sidebar.Item> */}
       </Sidebar.ItemGroup>
     </Sidebar>
   )

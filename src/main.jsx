@@ -5,14 +5,17 @@ import './index.css'
 
 import HouseContextProvider from './context/HouseContext.jsx'
 import { HashRouter } from 'react-router-dom'
+import ThemeContextProvider from './context/ThemeContext.jsx'
 // import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <HouseContextProvider>
-    <HashRouter>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    </HashRouter>
+    <ThemeContextProvider>
+      <HashRouter>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </HashRouter>
+    </ThemeContextProvider>
   </HouseContextProvider>
 )

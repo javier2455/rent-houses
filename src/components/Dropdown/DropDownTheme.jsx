@@ -1,21 +1,15 @@
 import { Dropdown } from 'keep-react'
 import { useContext } from 'react'
-import {
-  FaGear,
-  FaRegMoon,
-  FaRegSun,
-  FaRightToBracket,
-  FaRightFromBracket
-} from 'react-icons/fa6'
+import { FaRegMoon, FaRegSun, FaComputer } from 'react-icons/fa6' /* FaComputer */
 import { ThemeContext } from '../../context/ThemeContext'
 
-export default function DropDownOptions() {
+export default function DropDownTheme() {
   const { theme, handleChangeTheme } = useContext(ThemeContext)
 
   return (
     <Dropdown
       arrowIcon={true}
-      label={<FaGear />}
+      label={theme === 'dark' ? <FaRegMoon /> : <FaRegSun />}
       size='md'
       dismissOnClick={true}
       className='focus:ring-0 focus:bg-violet-700 focus:text-white bg-white hover:bg-violet-700 
@@ -23,24 +17,24 @@ export default function DropDownOptions() {
     >
       <Dropdown.Item
         className='hover:bg-violet-700 hover:text-white'
-        icon={theme === 'dark' ? <FaRegSun /> : <FaRegMoon />}
-        onClick={handleChangeTheme}
+        icon={<FaRegSun className='text-lg' />}
+        onClick={() => handleChangeTheme('light')}
       >
-        {theme === 'dark' ? 'Light' : 'Dark'} Mode
+        Light Mode
       </Dropdown.Item>
       <Dropdown.Item
         className='hover:bg-violet-700 hover:text-white'
-        icon={<FaRightToBracket />}
-        onClick={() => console.log('Sign In')}
+        icon={<FaRegMoon className='text-lg' />}
+        onClick={() => handleChangeTheme('dark')}
       >
-        Sign In
+        Dark Mode
       </Dropdown.Item>
       <Dropdown.Item
         className='hover:bg-violet-700 hover:text-white'
-        icon={<FaRightFromBracket />}
-        onClick={() => console.log('Sing Up')}
+        icon={<FaComputer className='text-lg'/>}
+        onClick={() => handleChangeTheme('system')}
       >
-        Sing Up
+        System
       </Dropdown.Item>
     </Dropdown>
   )

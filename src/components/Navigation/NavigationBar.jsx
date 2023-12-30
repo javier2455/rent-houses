@@ -6,15 +6,16 @@ import { SidebarComponent } from '../Sidebar/SidebarNavigation'
 import { useState } from 'react'
 import { FaBars } from 'react-icons/fa6'
 import DropDownOptions from '../Dropdown/DropDownOptions'
+import DropDownTheme from '../Dropdown/DropDownTheme'
 
 export const NavigationBar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
   return (
-    <Navbar fluid={true}>
+    <Navbar fluid={true} className='dark:bg-slate-900'>
       <Navbar.Container className='flex items-center justify-between'>
         <Navbar.Brand>
           <Link to={'/'}>
-            <p className='uppercase text-2xl'>Rent Your Dreams</p>
+            <p className='uppercase text-2xl dark:text-white'>Rent Your Dreams</p>
           </Link>
           {/* <img src={house.imageLg} alt={house.id} /> */}
         </Navbar.Brand>
@@ -40,6 +41,7 @@ export const NavigationBar = () => {
           </Navbar.Container>
           <Navbar.Container className='flex gap-3'>
             <DropdownComponent />
+            <DropDownTheme />
             <DropDownOptions />
             <div
               onClick={() => setToggleMenu(!toggleMenu)}

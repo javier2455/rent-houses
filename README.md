@@ -10,7 +10,6 @@ Currently, two official plugins are available:
 
 ## Tareas pendientes (20/12/2023 - Development)
 * Mejorar el código de filtrado en el componente search y HouseContext. 
-* Incluir las opciones para el Sidebar. (me quede aqui)
 * Modo oscuro.
 * Hacer formulario para el Login.
 * Hacer formulario para el Register.
@@ -23,6 +22,8 @@ Currently, two official plugins are available:
 * Internacionalización.
 
 ## Tareas terminadas
+* Corregida la barra de navegación. (29/12/2023)
+* Incluir las opciones para el Sidebar. (29/12/2023)
 * Darle un max-width a la descripción de las casas en vista móvil. (25/12/2023)
 * Agregar el tipo de moneda para variar el precio de las casas. (25/12/2023)
 * Arreglados los filtros con el cambio de tipo de moneda. (25/12/2023)

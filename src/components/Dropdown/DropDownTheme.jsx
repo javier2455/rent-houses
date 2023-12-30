@@ -11,19 +11,20 @@ export default function DropDownTheme() {
       arrowIcon={true}
       label={theme === 'dark' ? <FaRegMoon /> : <FaRegSun />}
       size='md'
+
       dismissOnClick={true}
       className='focus:ring-0 focus:bg-violet-700 focus:text-white bg-white hover:bg-violet-700 
-      hover:text-white border border-violet-700 text-violet-700 transition-all hidden lg:block'
+      hover:text-white border border-violet-700 text-violet-700 transition-all dark:bg-slate-900 dark:text-white'
     >
       <Dropdown.Item
-        className='hover:bg-violet-700 hover:text-white'
+        className={`${theme === 'light' && 'text-violet-700'} hover:bg-violet-700 hover:text-white`}
         icon={<FaRegSun className='text-lg' />}
         onClick={() => handleChangeTheme('light')}
       >
         Light Mode
       </Dropdown.Item>
       <Dropdown.Item
-        className='hover:bg-violet-700 hover:text-white'
+        className={`${theme === 'dark' && 'text-violet-700'} hover:bg-violet-700 hover:text-white`}
         icon={<FaRegMoon className='text-lg' />}
         onClick={() => handleChangeTheme('dark')}
       >

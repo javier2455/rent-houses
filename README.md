@@ -10,7 +10,7 @@ Currently, two official plugins are available:
 
 ## Tareas pendientes (20/12/2023 - Development)
 * Mejorar el código de filtrado en el componente search y HouseContext. 
-* Modo oscuro.
+
 * Hacer formulario para el Login.
 * Hacer formulario para el Register.
 * Hacer la 'data' de usuarios.
@@ -22,6 +22,8 @@ Currently, two official plugins are available:
 * Internacionalización.
 
 ## Tareas terminadas
+* Clases agregadas para el cambio de tema (tema claro u oscuro). (30/12/2023)
+* Adicionado el contexto para el 'Modo oscuro'. (30/12/2023)
 * Corregida la barra de navegación. (29/12/2023)
 * Incluir las opciones para el Sidebar. (29/12/2023)
 * Darle un max-width a la descripción de las casas en vista móvil. (25/12/2023)

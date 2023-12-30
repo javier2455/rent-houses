@@ -45,28 +45,30 @@ export default function PriceDropdown() {
     }
   ]
   return (
-    <div className='flex items-center h-14 border border-violet-700 rounded-lg lg:max-w-[296px] w-full'>
+    <div className='flex items-center h-14 border border-violet-700 rounded-lg lg:max-w-[296px] w-full dark:border-white'>
       <div className='h-full flex items-center px-2 border-r border-violet-700'>
-        <HiOutlineWallet className='text-xl text-violet-700' />
+        <HiOutlineWallet className='text-xl text-violet-700 dark:text-white' />
       </div>
-      <div className='flex items-center rounded-lg h-full w-full'>
+      <div className='flex items-center rounded-lg h-full w-full '>
         <select
-          className='select w-full h-full focus:border-none focus:outline-none rounded-lg mr-1'
+          className='select w-full h-full focus:border-none focus:outline-none rounded-r-lg'
           onChange={(e) => setPrice(e.target.value)}
         >
           <option value={'Price (any)'} className='text-[14px]'>
             Price (any)
           </option>
-          {coinType === 'CUP' && pricesInCUP.map((p, index) => (
-            <option key={index} value={p.value} className='text-[14px]'>
-              {p.value}
-            </option>
-          ))}
-          {coinType !== 'CUP' && prices.map((p, index) => (
-            <option key={index} value={p.value} className='text-[14px]'>
-              {p.value}
-            </option>
-          ))}
+          {coinType === 'CUP' &&
+            pricesInCUP.map((p, index) => (
+              <option key={index} value={p.value} className='text-[14px]'>
+                {p.value}
+              </option>
+            ))}
+          {coinType !== 'CUP' &&
+            prices.map((p, index) => (
+              <option key={index} value={p.value} className='text-[14px]'>
+                {p.value}
+              </option>
+            ))}
         </select>
       </div>
     </div>

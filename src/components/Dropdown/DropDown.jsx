@@ -9,7 +9,7 @@ export const DropdownComponent = () => {
       label={coinType}
       size='sm'
       dismissOnClick={true}
-      className='focus:ring-0 focus:bg-violet-700 focus:text-white bg-white hover:bg-violet-700 hover:text-white border border-violet-700 text-violet-700 transition-all'
+      className='focus:ring-0 focus:bg-violet-700 focus:text-white bg-white hover:bg-violet-700 hover:text-white border border-violet-700 text-violet-700 transition-all dark:bg-slate-900 dark:text-white'
     >
       <Dropdown.Item
         className='hover:bg-violet-700 hover:text-white'

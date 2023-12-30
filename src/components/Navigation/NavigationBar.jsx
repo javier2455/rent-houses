@@ -45,7 +45,7 @@ export const NavigationBar = () => {
             <DropDownOptions />
             <div
               onClick={() => setToggleMenu(!toggleMenu)}
-              className='lg:hidden flex justify-center items-center cursor-pointer border border-violet-700 px-4 py-2 rounded-lg hover:bg-violet-700 hover:text-white text-violet-700 transition'
+              className='lg:hidden flex justify-center items-center cursor-pointer border border-violet-700 px-4 py-2 rounded-lg hover:bg-violet-700 hover:text-white text-violet-700 transition -ml-3'
             >
               <FaBars className='text-xl' />
             </div>

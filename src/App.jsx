@@ -12,7 +12,7 @@ import NotFound404 from './pages/NotFound404'
 
 function App() {
   return (
-    <div className='max-w-[1440px] mx-auto bg-white'>
+    <div className='max-w-[1440px] mx-auto bg-white dark:bg-slate-900'>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />

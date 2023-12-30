@@ -30,28 +30,28 @@ export default function PropertyDetails() {
               <img src={house.imageLg} alt={house.id} />
             </div>
             <div className='flex gap-6 text-violet-700 mb-6 pl-4'>
-              <div className='flex gap-x-2 items-center'>
+              <div className='flex gap-x-2 items-center dark:text-white'>
                 <BiBed className='text-2xl' />
                 <div>{house.bedrooms}</div>
               </div>
-              <div className='flex gap-x-2 items-center'>
+              <div className='flex gap-x-2 items-center dark:text-white'>
                 <BiBath className='text-2xl' />
                 <div>{house.bathrooms}</div>
               </div>
-              <div className='flex gap-x-2 items-center'>
+              <div className='flex gap-x-2 items-center dark:text-white'>
                 <BiArea className='text-2xl' />
                 <div>{house.surface}</div>
               </div>
             </div>
-            <div className='font-semibold text-[18px] max-w-[90%] pl-4 text-pretty'>{house.description}</div>
+            <div className='font-semibold text-[18px] max-w-[90%] pl-4 text-pretty dark:text-white'>{house.description}</div>
           </div>
-          <div className='flex-1 bg-white w-full mb-8 border border-gray-300 rounded-lg px-6 py-8'>
+          <div className='flex-1 bg-white w-full mb-8 border border-gray-300 rounded-lg px-6 py-8 dark:bg-slate-900'>
             <div className='flex items-center gap-x-4 mb-8'>
               <div className='w-20 h-20 p-1 border border-gray-300 rounded-full'>
                 <img src={house.agent.image} alt='' />
               </div>
               <div>
-                <div className='font-bold text-lg'>{house.agent.name}</div>
+                <div className='font-bold text-lg dark:text-white'>{house.agent.name}</div>
                 <Link to={''} className='text-violet-700 text-sm'>
                   View Listing
                 </Link>
@@ -61,25 +61,25 @@ export default function PropertyDetails() {
             <div className='flex flex-col gap-y-4'>
               <div>
                 <div className='flex items-center justify-start'>
-                  <HiOutlineHome className='mr-3 text-2xl text-violet-700 text-center' />
-                  <h2 className='text-2xl font-semibold'>{house.name}</h2>
+                  <HiOutlineHome className='mr-3 text-2xl text-violet-700 text-center dark:text-white' />
+                  <h2 className='text-2xl font-semibold dark:text-white'>{house.name}</h2>
                 </div>
                 <div className='border-b border-b-gray-400 h-1 w-full my-3' />
                 <div className='flex items-center justify-start'>
-                  <RiMapPinLine className='mr-3 text-2xl text-violet-700 text-center' />
-                  <h2 className='text-2xl font-semibold'>{house.address}</h2>
+                  <RiMapPinLine className='mr-3 text-2xl text-violet-700 text-center dark:text-white' />
+                  <h2 className='text-2xl font-semibold dark:text-white'>{house.address}</h2>
                 </div>
                 <div className='border-b border-b-gray-400 h-1 w-full my-3' />
                 <div className='flex items-center justify-start'>
-                  <HiDevicePhoneMobile className='mr-3 text-2xl text-violet-700 text-center' />
-                  <h2 className='text-2xl font-semibold'>
+                  <HiDevicePhoneMobile className='mr-3 text-2xl text-violet-700 text-center dark:text-white' />
+                  <h2 className='text-2xl font-semibold dark:text-white'>
                     {house.agent.phone}
                   </h2>
                 </div>
                 <div className='border-b border-b-gray-400 h-1 w-full my-3' />
               </div>
               <div className='mb-4 lg:mb-0 flex gap-x-2 text-sm'>
-                <HiOutlineInformationCircle className='text-2xl text-violet-700 mr-1' />
+                <HiOutlineInformationCircle className='text-2xl text-violet-700 mr-1 dark:text-white' />
                 <div className='bg-green-500 text-white px-3 rounded-full'>
                   {house.type}
                 </div>
@@ -89,8 +89,8 @@ export default function PropertyDetails() {
               </div>
               <div className='border-b border-b-gray-400 h-1 w-full my-3' />
               <div className='flex items-center justify-start'>
-                <HiOutlineCurrencyDollar className='text-2xl text-violet-700 mr-3' />
-                <div className='text-3xl text-violet-700 font-semibold'>
+                <HiOutlineCurrencyDollar className='text-2xl text-violet-700 mr-3 dark:text-white' />
+                <div className='text-3xl text-violet-700 font-semibold dark:text-white'>
                   {getPriceByCoin(house.price, coinType)}
                 </div>
               </div>

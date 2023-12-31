@@ -45,7 +45,8 @@ export default function PropertyDetails() {
             </div>
             <div className='font-semibold text-[18px] max-w-[90%] pl-4 text-pretty dark:text-white'>{house.description}</div>
           </div>
-          <div className='flex-1 bg-white w-full mb-8 border border-gray-300 rounded-lg px-6 py-8 dark:bg-slate-900'>
+          <div className='flex-1 bg-white w-full mb-8 border border-gray-300 rounded-lg px-6 py-8 
+          dark:bg-slate-900 dark:border-violet-700'>
             <div className='flex items-center gap-x-4 mb-8'>
               <div className='w-20 h-20 p-1 border border-gray-300 rounded-full'>
                 <img src={house.agent.image} alt='' />

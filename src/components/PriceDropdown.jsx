@@ -45,13 +45,13 @@ export default function PriceDropdown() {
     }
   ]
   return (
-    <div className='flex items-center h-14 border border-violet-700 rounded-lg lg:max-w-[296px] w-full dark:border-white'>
+    <div className='flex items-center h-14 border border-violet-700 rounded-lg lg:max-w-[296px] w-full'>
       <div className='h-full flex items-center px-2 border-r border-violet-700'>
         <HiOutlineWallet className='text-xl text-violet-700 dark:text-white' />
       </div>
       <div className='flex items-center rounded-lg h-full w-full '>
         <select
-          className='select w-full h-full focus:border-none focus:outline-none rounded-r-lg'
+          className='select w-full h-full focus:border-none focus:outline-none rounded-r-lg dark:bg-slate-900 dark:text-white'
           onChange={(e) => setPrice(e.target.value)}
         >
           <option value={'Price (any)'} className='text-[14px]'>

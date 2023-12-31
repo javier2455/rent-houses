@@ -9,8 +9,9 @@ Currently, two official plugins are available:
 
 
 ## Tareas pendientes (20/12/2023 - Development)
-* Mejorar el código de filtrado en el componente search y HouseContext. 
-
+* Mejorar el código de filtrado en el componente search y HouseContext.
+* Revisar que en algunos navegadores y dispositivos móviles el contenedor del componente `search` no coje las clases del modo oscuro.
+* Corregir la barra de navegación para dispositivos móviles
 * Hacer formulario para el Login.
 * Hacer formulario para el Register.
 * Hacer la 'data' de usuarios.
@@ -20,6 +21,7 @@ Currently, two official plugins are available:
 * Hacer algunas Notificaciones.
 * Hacer las validaciones cuando termina el proceso de rentar o cuando ocurre algn error.
 * Internacionalización.
+* Arreglar que cuando se seleccione la opción del tema del sistema del usuario se marque esa opción y no la de dark mode.
 
 ## Tareas terminadas
 * Clases agregadas para el cambio de tema (tema claro u oscuro). (30/12/2023)

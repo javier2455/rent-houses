@@ -1,16 +1,18 @@
 import { Sidebar } from 'keep-react'
 import {
   FaArrowLeftLong,
-  FaRegSun,
-  // FaRegMoon,
   FaUserPlus,
   FaRightToBracket,
-  // FaRightFromBracket,
-  // FaGear
+  FaRegMoon,
+  FaRegSun,
+  FaComputer
 } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
+import { ThemeContext } from '../../context/ThemeContext'
+import { useContext } from 'react'
 
 export const SidebarComponent = ({ toggleMenu, setToggleMenu }) => {
+  const { theme, handleChangeTheme } = useContext(ThemeContext)
   return (
     <Sidebar
       aria-label='Sidebar with multi-level dropdown example'
@@ -29,13 +31,48 @@ export const SidebarComponent = ({ toggleMenu, setToggleMenu }) => {
       </div>
       <Sidebar.ItemGroup className='flex flex-col justify-start items-start'>
         {/* label='3' */}
-        <Sidebar.Item
-          icon={<FaRegSun className='text-2xl text-violet-700' />}
+        <Sidebar.Collapse
+          icon={
+            theme === 'dark' ? (
+              <FaRegMoon size={24} className='text-2xl text-violet-700' />
+            ) : (
+              <FaRegSun size={24} className='text-2xl text-violet-700' />
+            )
+          }
           className='text-violet-700 hover:bg-white hover:border-l-[3px] hover:border-l-violet-700
           transition'
+          label='Themes'
         >
-          Light / Dark Mode
-        </Sidebar.Item>
+          <Sidebar.Item
+            icon={<FaRegSun size={24} className={`${theme === 'light' ? 'text-violet-700' : 'text-gray-700'} text-2xl`} />}
+            className={`${theme === 'light' ? 'text-violet-700' : 'text-gray-700'} hover:bg-white hover:border-l-[3px] hover:border-l-violet-700
+          transition cursor-pointer`}
+            onClick={() => handleChangeTheme('light')}
+          >
+            Light
+          </Sidebar.Item>
+          <Sidebar.Item
+            icon={<FaRegMoon size={24} className={`${theme === 'dark' ? 'text-violet-700' : 'text-gray-700'} text-2xl`} />}
+            className={`${theme === 'dark' ? 'text-violet-700' : 'text-gray-700'} hover:bg-white hover:border-l-[3px] hover:border-l-violet-700
+            transition cursor-pointer`}
+            onClick={() => handleChangeTheme('dark')}
+          >
+            Dark
+          </Sidebar.Item>
+          <Sidebar.Item
+            icon={<FaComputer size={24} className={`${theme === 'system' ? 'text-violet-700' : 'text-gray-700'} text-2xl`} />}
+            className={`${theme === 'system' ? 'text-violet-700' : 'text-gray-700'} hover:bg-white hover:border-l-[3px] hover:border-l-violet-700
+            transition cursor-pointer`}
+            onClick={() => handleChangeTheme('system')}
+          >
+            System
+          </Sidebar.Item>
+        </Sidebar.Collapse>
+        <Sidebar.Item
+          // icon={<FaRegSun className='text-2xl text-violet-700' />}
+          className='text-violet-700 hover:bg-white hover:border-l-[3px] hover:border-l-violet-700
+          transition'
+        ></Sidebar.Item>
         {/* <Sidebar.Item
           icon={<FaGear className='text-2xl text-violet-700' />}
           className='text-violet-700 hover:bg-white hover:border-l-[3px] hover:border-l-violet-700

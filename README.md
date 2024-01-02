@@ -10,20 +10,20 @@ Currently, two official plugins are available:
 
 ## Tareas pendientes (20/12/2023 - Development)
 * Mejorar el código de filtrado en el componente search y HouseContext.
-* Revisar que en algunos navegadores y dispositivos móviles el contenedor del componente `search` no coje las clases del modo oscuro.
-* Corregir la barra de navegación para dispositivos móviles
+* Hacer el formulario de pago para renta.
 * Hacer formulario para el Login.
 * Hacer formulario para el Register.
 * Hacer la 'data' de usuarios.
 * Hacer el contexto para los usuarios.
 * Hacer los métodos para iniciar sesión y salir de la sesión.
-* Hacer el formulario de pago para renta.
 * Hacer algunas Notificaciones.
 * Hacer las validaciones cuando termina el proceso de rentar o cuando ocurre algn error.
 * Internacionalización.
 * Arreglar que cuando se seleccione la opción del tema del sistema del usuario se marque esa opción y no la de dark mode.
 
 ## Tareas terminadas
+* Modificar barra de navegación para dispositivos móviles. (2/1/2024)
+* Corregido que en algunos navegadores y dispositivos móviles el contenedor del componente `search` no coje las clases del modo oscuro. (31/12/2023)
 * Clases agregadas para el cambio de tema (tema claro u oscuro). (30/12/2023)
 * Adicionado el contexto para el 'Modo oscuro'. (30/12/2023)
 * Corregida la barra de navegación. (29/12/2023)

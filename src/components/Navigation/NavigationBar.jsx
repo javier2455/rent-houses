@@ -14,11 +14,11 @@ export const NavigationBar = () => {
     <Navbar fluid={true} className='dark:bg-slate-900'>
       <Navbar.Container className='flex items-center justify-between'>
         <Navbar.Brand>
-          <Link to={'/'} className='dark:text-white md:hidden'>
+          <Link to={'/'} className='dark:text-white md:hidden text-violet-700'>
             <FaHouseChimneyUser className='text-[45px]' />
           </Link>
           <Link to={'/'} className='hidden md:flex md:items-center md:justify-start md:gap-3'>
-            <FaHouseChimneyUser className='text-[40px] dark:text-white' />
+            <FaHouseChimneyUser className='text-[40px] dark:text-white text-violet-700' />
             <p className='uppercase text-2xl dark:text-white'>
               Rent Your Dreams
             </p>

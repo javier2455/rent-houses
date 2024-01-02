@@ -9,6 +9,7 @@ import PropertyDetails from './pages/PropertyDetails'
 import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import NotFound404 from './pages/NotFound404'
+import HouseToRent from './pages/HouseToRent'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/property/:id' element={<PropertyDetails />} />
         <Route path='/sign-in' element={<SignIn />} />
         <Route path='/sign-up' element={<SignUp />} />
+        <Route path='house-to-rent/:id' element={<HouseToRent />} />
         <Route path='/*' element={<NotFound404 />} />
       </Routes>
       <Footer />

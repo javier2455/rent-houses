@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { DropdownComponent } from '../Dropdown/DropDown'
 import { SidebarComponent } from '../Sidebar/SidebarNavigation'
 import { useState } from 'react'
-import { FaBars } from 'react-icons/fa6'
+import { FaBars, FaHouseChimneyUser } from 'react-icons/fa6'
 import DropDownOptions from '../Dropdown/DropDownOptions'
 import DropDownTheme from '../Dropdown/DropDownTheme'
 
@@ -14,8 +14,14 @@ export const NavigationBar = () => {
     <Navbar fluid={true} className='dark:bg-slate-900'>
       <Navbar.Container className='flex items-center justify-between'>
         <Navbar.Brand>
-          <Link to={'/'}>
-            <p className='uppercase text-2xl dark:text-white'>Rent Your Dreams</p>
+          <Link to={'/'} className='dark:text-white md:hidden'>
+            <FaHouseChimneyUser className='text-[45px]' />
+          </Link>
+          <Link to={'/'} className='hidden md:flex md:items-center md:justify-start md:gap-3'>
+            <FaHouseChimneyUser className='text-[40px] dark:text-white' />
+            <p className='uppercase text-2xl dark:text-white'>
+              Rent Your Dreams
+            </p>
           </Link>
           {/* <img src={house.imageLg} alt={house.id} /> */}
         </Navbar.Brand>

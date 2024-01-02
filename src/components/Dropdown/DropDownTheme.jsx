@@ -14,7 +14,7 @@ export default function DropDownTheme() {
 
       dismissOnClick={true}
       className='focus:ring-0 focus:bg-violet-700 focus:text-white bg-white hover:bg-violet-700 
-      hover:text-white border border-violet-700 text-violet-700 transition-all dark:bg-slate-900 dark:text-white'
+      hover:text-white border border-violet-700 text-violet-700 transition-all dark:bg-slate-900 dark:text-white hidden md:block'
     >
       <Dropdown.Item
         className={`${theme === 'light' && 'text-violet-700'} hover:bg-violet-700 hover:text-white`}

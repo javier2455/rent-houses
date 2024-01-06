@@ -20,7 +20,7 @@ function App() {
         <Route path='/property/:id' element={<PropertyDetails />} />
         <Route path='/sign-in' element={<SignIn />} />
         <Route path='/sign-up' element={<SignUp />} />
-        <Route path='house-to-rent/:id' element={<HouseToRent />} />
+        <Route path='/house-to-rent/:id' element={<HouseToRent />} />
         <Route path='/*' element={<NotFound404 />} />
       </Routes>
       <Footer />

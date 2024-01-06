@@ -22,6 +22,7 @@ Currently, two official plugins are available:
 * Arreglar que cuando se seleccione la opción del tema del sistema del usuario se marque esa opción y no la de dark mode.
 
 ## Tareas terminadas
+* Correcciones en la barra de navegación lateral cuando esta en dispositivos móviles.
 * Modificar barra de navegación para dispositivos móviles. (2/1/2024)
 * Corregido que en algunos navegadores y dispositivos móviles el contenedor del componente `search` no coje las clases del modo oscuro. (31/12/2023)
 * Clases agregadas para el cambio de tema (tema claro u oscuro). (30/12/2023)

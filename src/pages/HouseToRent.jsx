@@ -7,7 +7,7 @@ export default function HouseToRent() {
   const house = housesData.find((house) => house.id === parseInt(id))
   return (
     <section className='flex flex-col md:flex-row justify-between container border border-white mx-auto'>
-      <RentForm />
+      {/* <RentForm /> */}
       <div className='dark:text-white'>House Info</div>
     </section>
   )
